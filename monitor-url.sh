@@ -1,5 +1,6 @@
 #!/bin/bash
 www="http://..."
+#we put ok into  a php monitor file 
 checkdur=30
 while true 
 do
