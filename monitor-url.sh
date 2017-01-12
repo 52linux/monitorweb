@@ -3,7 +3,7 @@ www="http://..."
 checkdur=30
 while true 
 do
-s=`curl -s -m  5 "http://$www/online.php"`
+s=`curl -s -m  5 "$www"`
 if [ $s == "ok" ] 
 then
 	echo "ok"
