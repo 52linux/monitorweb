@@ -5,7 +5,7 @@ checkdur=30
 while true 
 do
 s=`curl -s -m  5 "$www"`
-if [ $s == "ok" ] 
+if [[ $s == "ok" ]] 
 then
     echo "ok"
     counter=0
@@ -14,7 +14,7 @@ else
     counter=$(($counter+1))
     echo $counter
     
-    if [ $counter -gt 3 ]
+    if [[ $counter > 3 ]]
     then
         echo "restart host"
         #add restart host shell here 
